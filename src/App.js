@@ -1,14 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Counter from './Counter';
+// import Buttons from './Buttons';
+import BtnGroup from './BtnGroup';
+import Component from './Component';
 
-function App() {
+export default () => {
+
   return (
     <div className="App">
       <header className="App-header">
+        <Counter count={5}/>
+        {/* <Buttons /> */}
+        <Component />
+        <BtnGroup />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+
         </p>
         <a
           className="App-link"
@@ -18,9 +28,10 @@ function App() {
         >
           Learn React
         </a>
+
+
       </header>
     </div>
   );
 }
 
-export default App;
