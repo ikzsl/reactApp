@@ -3,16 +3,20 @@ import React from "react";
 export default class FlavorForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { value: 'start' };
+        this.state = { value: 'start' , isGoing: false};
     }
 
     handleChange = (e) => {
         this.setState({value: e.target.value})
-    }
+    };
 
     handleSubmit = (e) => {
         e.preventDefault();
-        alert(`ddddd ${this.state.value}`);
+        alert(`ddddd ${this.state.value} ${this.state.isGoing}`);
+    };
+
+    handleInputChange = (e) => {
+        this.setState({isGoing: e.target.checked});
     };
 
     render() {
@@ -25,6 +29,7 @@ export default class FlavorForm extends React.Component {
                         <option value="value3">value3</option>
                     </select>
                 </label>
+                <input name="isGoing" type="checkbox" checked={this.state.isGoing} onChange={this.handleInputChange} />
                 <input type="submit" value="Submit"/>
             </form>
         );
