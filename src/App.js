@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Counter from './Counter';
+// import Counter from './Counter';
 // import Buttons from './Buttons';
-import BtnGroup from './BtnGroup';
-import Component from './Component';
+// import BtnGroup from './BtnGroup';
+// import Component from './Component';
 
 export default () => {
 

@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 // import Counter from './Counter';
-import Carousel from './Carousel';
-import * as serviceWorker from './serviceWorker';
+// import Carousel from './Carousel';
+// import Help from './Help';
+import TextInput from './TextInput';
 
-const images = ['https://via.placeholder.com/550x100', 'https://via.placeholder.com/550x200', 'https://via.placeholder.com/550x300'];
+// import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Carousel images={images}/>, document.getElementById('root'));
+// const images = ['https://via.placeholder.com/550x100', 'https://via.placeholder.com/550x200', 'https://via.placeholder.com/550x300'];
+
+ReactDOM.render(<TextInput text="hi" />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// serviceWorker.unregister();
