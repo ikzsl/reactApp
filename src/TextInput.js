@@ -11,7 +11,7 @@ export default class TextInput extends React.Component {
         alert(`yyyyyyyyyyyy: ${this.state.text}`);
     }
 
-    handleChange = (e) => {this.setState({ text: e.target.value })};
+    handleChange = (e) => {this.setState({ text: e.target.value.toUpperCase()})};
 
     render() {
         return <form onSubmit={this.handleSubmit}>
